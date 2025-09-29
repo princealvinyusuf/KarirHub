@@ -1,0 +1,58 @@
+# Node & package managers
+**/node_modules/
+.pnp.cjs
+.pnp.loader.mjs
+
+# Build output
+backend/dist/
+frontend/dist/
+**/.next/
+**/.nuxt/
+**/.svelte-kit/
+
+# Caches
+**/.cache/
+**/.parcel-cache/
+**/.vite/
+**/.turbo/
+**/.eslintcache
+**/*.tsbuildinfo
+
+# Logs & diagnostics
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+backend/.env.local
+frontend/.env.local
+!backend/.env.example
+!frontend/.env.example
+
+# Coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# Prisma (generated client cache lives under node_modules)
+**/.prisma/
+
+# IDE/editor
+.idea/
+.vscode/
+*.swp
+
+# OS specific
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+
