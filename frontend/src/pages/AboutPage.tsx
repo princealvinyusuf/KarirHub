@@ -1,11 +1,16 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react'
+import { IonButton, IonButtons, IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react'
+import { useNavigate } from 'react-router-dom'
 
 export default function AboutPage() {
+  const navigate = useNavigate()
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
           <IonTitle>About Us</IonTitle>
+          <IonButtons slot="end">
+            <IonButton onClick={() => navigate('/certifications')}>Certification Programs</IonButton>
+          </IonButtons>
         </IonToolbar>
       </IonHeader>
       <IonContent className="ion-padding">

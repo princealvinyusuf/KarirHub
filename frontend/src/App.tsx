@@ -4,6 +4,8 @@ import JobsPage from './pages/JobsPage'
 import JobDetailPage from './pages/JobDetailPage'
 import LoginPage from './pages/LoginPage'
 import AboutPage from './pages/AboutPage'
+import CertificationListPage from './pages/CertificationListPage'
+import CertificationFormPage from './pages/CertificationFormPage'
 
 export default function App() {
   return (
@@ -12,6 +14,9 @@ export default function App() {
       <Route path="/jobs/:id" element={<JobDetailPage />} />
       <Route path="/login" element={<LoginPage />} />
       <Route path="/about" element={<AboutPage />} />
+      <Route path="/certifications" element={<CertificationListPage />} />
+      <Route path="/certifications/new" element={<CertificationFormPage />} />
+      <Route path="/certifications/:id/edit" element={<CertificationFormPage />} />
     </Routes>
   )
 }

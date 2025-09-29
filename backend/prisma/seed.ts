@@ -63,6 +63,25 @@ async function main() {
     });
   }
 
+  // Seed certification programs
+  await prisma.certificationProgram.createMany({
+    data: [
+      {
+        title: "Ionic Developer Certification",
+        provider: "Ionic Academy",
+        description: "Certification for building mobile apps with Ionic.",
+        link: "https://ionic.io/academy",
+      },
+      {
+        title: "Node.js Professional",
+        provider: "OpenJS Foundation",
+        description: "Professional-level Node.js certification.",
+        link: "https://openjsf.org/certification/",
+      },
+    ],
+    skipDuplicates: true,
+  });
+
   console.log({ employer: employer.email, seeker: seeker.email, company: company.name });
 }
 
